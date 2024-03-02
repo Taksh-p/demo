@@ -12,3 +12,11 @@ Stream<int> getNumber(int number) async*{
     yield i;
   }
 }
+
+Stream<String> getName()async*{
+
+  await Future.delayed(Duration(seconds: 1));
+  yield "Hello";
+  await Future.delayed(Duration(seconds: 1));
+  yield "World";
+}
